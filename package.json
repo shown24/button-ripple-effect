@@ -4,7 +4,7 @@
   "description": "Ripple effect for a button",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register --require babel-polyfill"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
