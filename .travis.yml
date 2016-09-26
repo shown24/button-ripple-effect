@@ -9,11 +9,5 @@ before_install:
   - "npm install -g npm"
   - "npm config set spin false"
 before_script:
-  - "npm install webpack"
-  - "npm install babel-register"
-  - "npm install babel-polyfill"
-  - "npm install babel-preset-es2015"
-  - "npm install babel-preset-react"
-  - "webpack test/**/*.js test-bundle.js"
   - "npm install jshint"
   - "npm install mocha"

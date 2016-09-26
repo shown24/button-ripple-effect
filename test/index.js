@@ -1,7 +1,8 @@
 describe("Test", function()
 {
 
-	it('Test test', () => {
+	it('Test test', function()
+	{
 		return 1;
 	});
 
