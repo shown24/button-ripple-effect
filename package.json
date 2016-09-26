@@ -4,7 +4,7 @@
   "description": "Ripple effect for a button",
   "main": "index.js",
   "scripts": {
-    "test" : "./node_modules/button-ripple-effect/test test.js"
+    "test" : "mocha"
   },
   "repository": {
     "type": "git",
