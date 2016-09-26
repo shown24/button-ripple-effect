@@ -70,7 +70,6 @@
 			return {top: Math.round(top), left: Math.round(left)};
 		}
 	}
-
 	return new RippleEffect();
 })
 ();
