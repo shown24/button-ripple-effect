@@ -17,7 +17,7 @@
 				let list = document.querySelectorAll('.__ripple-eff');
 				for(let i = 0; i < list.length; i++)
 				{
-					list[i].addEventListener('click', function(e)
+					list[i].addEventListener('click', (e) =>
 					{
 						if(this.classList.contains('disabled') || this.disabled === true)
 						{
@@ -53,19 +53,19 @@
 
 		getCoords(elem)
 		{
-			var box = elem.getBoundingClientRect();
+			let box = elem.getBoundingClientRect(),
 
-			var body = document.body;
-			var docEl = document.documentElement;
+				body = document.body,
+				docEl = document.documentElement,
 
-			var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
-			var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+				scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop,
+				scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft,
 
-			var clientTop = docEl.clientTop || body.clientTop || 0;
-			var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+			    clientTop = docEl.clientTop || body.clientTop || 0,
+				clientLeft = docEl.clientLeft || body.clientLeft || 0,
 
-			var top = box.top + scrollTop - clientTop;
-			var left = box.left + scrollLeft - clientLeft;
+				top = box.top + scrollTop - clientTop,
+				left = box.left + scrollLeft - clientLeft;
 
 			return {top: Math.round(top), left: Math.round(left)};
 		}

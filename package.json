@@ -1,6 +1,6 @@
 {
   "name": "button-ripple-effect",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Ripple effect for a button",
   "main": "index.js",
   "scripts": {
