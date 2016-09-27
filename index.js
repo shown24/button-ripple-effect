@@ -61,7 +61,7 @@
 				scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop,
 				scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft,
 
-			    clientTop = docEl.clientTop || body.clientTop || 0,
+				clientTop = docEl.clientTop || body.clientTop || 0,
 				clientLeft = docEl.clientLeft || body.clientLeft || 0,
 
 				top = box.top + scrollTop - clientTop,
